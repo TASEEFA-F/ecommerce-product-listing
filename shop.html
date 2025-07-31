@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Shop</title>
+    <link rel="stylesheet" href="main_styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Our Products</h1>
+    </header>
+
+    <main>
+        <aside class="filters">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <h3>Category</h3>
+                <div id="category-filters">
+                    </div>
+            </div>
+            <div class="filter-group">
+                <h3>Price</h3>
+                <label for="price-filter">Max Price: ₹<span id="price-value">110000</span></label>
+                <input type="range" id="price-filter" min="0" max="110000" value="110000" step="500">
+            </div>
+        </aside>
+
+        <section id="product-grid" class="product-grid">
+            </section>
+    </main>
+
+    <script src="app_logic.js"></script>
+</body>
+</html>
